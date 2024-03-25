@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-set(PROJECT_NAME Application)
+set(PROJECT_NAME Application CXX)
 project(${PROJECT_NAME})
 
 add_subdirectory(lib)

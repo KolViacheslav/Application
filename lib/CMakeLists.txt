@@ -29,5 +29,9 @@ source_group(TREE ${CMAKE_SOURCE_DIR} FILES
 target_include_directories(${PROJECT_LIB} PUBLIC include)
 target_include_directories(${PROJECT_LIB} PRIVATE src)
 
+add_subdirectory(../external/spdlog ${CMAKE_CURRENT_BINARY_DIR}/spdlog)
+target_link_libraries(${PROJECT_LIB} PRIVATE spdlog)
+
+
 target_compile_features(${PROJECT_LIB} PUBLIC cxx_std_17)
 

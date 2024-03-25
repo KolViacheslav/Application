@@ -1,9 +1,9 @@
 #include <mylib/Application.hpp>
 
 Application::Application() {
-    std::cout << "Start\n";
+    LOG_INFO("Start Application");
 }
 
 Application::~Application() {
-    std::cout << "End\n";
+    LOG_INFO("End Application");
 }
