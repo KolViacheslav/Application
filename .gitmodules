@@ -1,0 +1,12 @@
+[submodule "external/sqlite"]
+	path = external/sqlite
+	url = https://github.com/SRombauts/SQLiteCpp.git
+[submodule "external/sqlite_orm"]
+	path = external/sqlite_orm
+	url = https://github.com/fnc12/sqlite_orm.git
+[submodule "external/spdlog"]
+	path = external/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "external/fastcgi"]
+	path = external/fastcgi
+	url = https://github.com/eddic/fastcgipp.git
