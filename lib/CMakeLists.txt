@@ -32,6 +32,11 @@ target_include_directories(${PROJECT_LIB} PRIVATE src)
 add_subdirectory(../external/spdlog ${CMAKE_CURRENT_BINARY_DIR}/spdlog)
 target_link_libraries(${PROJECT_LIB} PRIVATE spdlog)
 
+add_subdirectory(../external/sqlite ${CMAKE_CURRENT_BINARY_DIR}/sqlite)
+target_link_libraries(${PROJECT_LIB} PRIVATE sqlite3)
+
+add_subdirectory(../external/sqlite_orm ${CMAKE_CURRENT_BINARY_DIR}/sqlite_orm)
+target_link_libraries(${PROJECT_LIB} PRIVATE sqlite_orm)
 
 target_compile_features(${PROJECT_LIB} PUBLIC cxx_std_17)
 
