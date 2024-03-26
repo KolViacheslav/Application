@@ -4,9 +4,9 @@
 [submodule "external/spdlog"]
 	path = external/spdlog
 	url = https://github.com/gabime/spdlog.git
-[submodule "external/fastcgi"]
-	path = external/fastcgi
-	url = https://github.com/eddic/fastcgipp.git
 [submodule "external/sqlite"]
 	path = external/sqlite
 	url = https://github.com/alex85k/sqlite3-cmake.git
+[submodule "external/fastcgipp"]
+	path = external/fastcgipp
+	url = https://github.com/eddic/fastcgipp.git

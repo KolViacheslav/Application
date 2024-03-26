@@ -4,6 +4,8 @@
 #include "sqlite3.h"
 #include "sqlite_orm/sqlite_orm.h"
 
+#include "fastcgi++/http.hpp"
+
 using namespace sqlite_orm;
 
 Application::Application() {
