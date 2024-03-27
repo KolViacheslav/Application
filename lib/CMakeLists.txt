@@ -35,8 +35,8 @@ target_link_libraries(${PROJECT_LIB} PRIVATE spdlog)
 add_subdirectory(../external/sqlite ${CMAKE_CURRENT_BINARY_DIR}/sqlite)
 target_link_libraries(${PROJECT_LIB} PRIVATE sqlite3)
 
-add_subdirectory(../external/sqlite_orm ${CMAKE_CURRENT_BINARY_DIR}/sqlite_orm)
-target_link_libraries(${PROJECT_LIB} PRIVATE sqlite_orm)
+#add_subdirectory(../external/sqlite_orm ${CMAKE_CURRENT_BINARY_DIR}/sqlite_orm)
+#target_link_libraries(${PROJECT_LIB} PRIVATE sqlite_orm)
 
 add_subdirectory(../external/fastcgipp ${CMAKE_CURRENT_BINARY_DIR}/fastcgipp)
 target_link_libraries(${PROJECT_LIB} PRIVATE fastcgipp)
