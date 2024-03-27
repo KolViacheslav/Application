@@ -7,6 +7,3 @@
 [submodule "external/fastcgipp"]
 	path = external/fastcgipp
 	url = https://github.com/eddic/fastcgipp.git
-[submodule "external/sqlite"]
-	path = external/sqlite
-	url = https://github.com/tek256/SQLite3.cmake.git
