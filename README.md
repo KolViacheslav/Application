@@ -32,17 +32,17 @@ sudo apt install libsqlite3-dev
 
 Склонуйте репозиторій:
 
-git clone ["url"](https://github.com/KolViacheslav/Application.git)
+git clone https://github.com/KolViacheslav/Application.git
+
+Перейдіть в директорію проекту.
+
+cd Application
 
 Ініціалізуйте та завантажте допоміжні бібліотеки.
 
 git submodule init
 
 git submodule update
-
-Перейдіть в директорію проекту.
-
-cd Application
 
 Якщо не створилась директорія "build", то створіть її і перейдіть до неї.
 
@@ -70,7 +70,8 @@ sudo nano /etc/nginx/sites-available/{default}
 
 Добавляємо до вашої конфігурації:
 
-location /index {
+location /index 
+{
 		fastcgi_pass 127.0.0.1:8000;
 
 		fastcgi_param	GATEWAY_INTERFACE	CGI/1.1;
