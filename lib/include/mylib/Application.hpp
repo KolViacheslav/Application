@@ -10,6 +10,8 @@ private:
 public:
     Application();
 
+    int webHelloWorld();
+
     virtual ~Application();
 
 };
