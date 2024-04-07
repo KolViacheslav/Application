@@ -8,10 +8,14 @@ set(PUBLIC_INCLUDES
 
 set(PRIVATE_INCLUDES
     include/mylib/Log.hpp
+    include/mylib/Database.hpp
+    include/mylib/WebPageInterface.hpp
 )
 
 set(PRIVATE_SOURCES
     src/mylib/Application.cpp
+    src/mylib/Database.cpp
+    src/mylib/WebPageInterface.cpp
 )
 
 set(ALL_SOURCES

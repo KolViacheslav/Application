@@ -1,4 +1,7 @@
-#include <mylib/Application.hpp>
+
+/*#include <mylib/Application.hpp>
+
+
 
 #include <mylib/Log.hpp>
 
@@ -104,5 +107,48 @@ int Application::webHelloWorld() {
     //! [Join]
     manager.join();
 
+    return 0;
+}*/
+
+#include <mylib/Application.hpp>
+#include <mylib/Log.hpp>
+
+
+
+
+void Application::Run() {
+    LOG_INFO("Start Running Application.");
+
+    this->m_WpgIntf->ShowPage();
+
+    LOG_INFO("Ending Running Application.");
+}
+
+Application::Application() {
+    LOG_INFO("Start Constructor Application.");
+    this->Init();
+
+    LOG_INFO("Ending Constructor Application.");
+}
+
+int Application::Init() {
+    LOG_INFO("Start Initialization Application.");
+
+    this->m_db = std::make_unique<Database>();
+    this->m_WpgIntf = std::make_unique<WebPageInterface>();
+
+    LOG_INFO("Ending Initialization Application.");
+    return 0;
+}
+
+Application::~Application() {
+    this->Destructor();
+}
+
+int Application::Destructor() {
+    LOG_INFO("Start Destruction Application.");
+
+
+    LOG_INFO("Ending Destruction Application.");
     return 0;
 }

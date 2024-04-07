@@ -3,12 +3,9 @@
 // sudo apt-get install libsqlite3-dev
 
 int main(int argc, char** argv) {
+    Application& app = Application::getInstance();
 
-    auto app = std::make_unique<Application>();
-
-    app->webHelloWorld();
-
-    std::cin.get();
-
+    app.Run();
+    
     return 0;
 }
